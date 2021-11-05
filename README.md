@@ -1,6 +1,6 @@
 # SpaceShip 🚀
 
-![space](https://user-images.githubusercontent.com/47337588/140522198-b7c41580-28d8-4308-ad64-504aa266f3c6.png)One Paragraph of project description goes here / 프로젝트의 전반적인 내용에 대한 요약을 여기에 적습니다
+![space](https://user-images.githubusercontent.com/47337588/140522198-b7c41580-28d8-4308-ad64-504aa266f3c6.png)
 
 ## Getting Started / 어떻게 시작하나요?
 
