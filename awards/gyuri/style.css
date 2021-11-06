@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
 
 body {
+    box-sizing: border-box;
     display: grid;
     grid-template-rows: 1 1 20%;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+    background: #f4f7f6;
 }
 
 /* header */
@@ -123,6 +125,112 @@ main {
     display: grid;
     height: 300px;
     grid-row: 2/3;
+}
+
+.card_section {
+    background: #525252;
+    width: 100%;
+    margin: 3rem;
+}
+
+.card_section > header > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul.card_wrap {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    max-width: 417px;
+    max-height: 443px;
+}
+
+.card_wrap__li {
+    width: 100%;
+    height: 100%;
+}
+
+.web_img {
+    width: 100%;
+    max-width: 420px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.web_desc {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: #222222;
+}
+
+.web_desc > ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.web_desc > ul:nth-child(1) {
+    margin-bottom: 0;
+}
+
+.web_desc > strong {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.name {
+    font-weight: 600;
+}
+.profile_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile_img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+}
+
+.tags > ul {
+    display: flex;
+}
+
+.hm, .dev, .sotd {
+    padding: 0.2rem 0.4rem;
+    margin-right: 0.3rem;
+    border-radius: 10px 10px 10px 10px;
+    color: rgb(255, 255, 255);
+}
+.hm {
+    background: #9FD2D6;
+}
+
+.dev {
+    background: #8155EF;
+}
+
+.sotd {
+    margin: 0;
+    background: #F64E4E;
 }
 
 /* footer */
