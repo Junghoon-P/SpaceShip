@@ -143,9 +143,13 @@ main {
     justify-content: space-between;
 }
 
+.card_section  strong {
+    margin-right: 0.8rem;
+}
+
 ul.card_wrap {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background: #fff;
     width: 100%;
     height: 100%;
@@ -154,7 +158,6 @@ ul.card_wrap {
 .card_wrap__li {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     width: 100%;
     height: 100%;
     margin-right: 2rem;
