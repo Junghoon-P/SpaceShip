@@ -338,6 +338,18 @@ ul.card_wrap {
     margin: 0;
     background: #f64e4e;
 }
+.button_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.load {
+    padding: 1.5rem 3rem;
+    background: #fff;
+    font-size: 1rem;
+    color: #c2c2c2;
+}
 
 /* footer */
 
