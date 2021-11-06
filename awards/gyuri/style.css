@@ -121,7 +121,6 @@ nav {
 /* main */
 
 main {
-    background: rgb(107, 102, 102);
     display: grid;
     height: 300px;
     grid-row: 2/3;
@@ -129,7 +128,7 @@ main {
 
 .card_section {
     /* background: #525252; */
-    margin: 4rem;
+    margin: 2.5rem;
 }
 
 .card_section > header {
@@ -141,15 +140,26 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .card_section  strong {
     margin-right: 0.8rem;
 }
 
+.join_btn {
+    color: #222222;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    border: 1px solid #222222;
+    border-radius: 50px 50px;
+}
+
 ul.card_wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     background: #fff;
     width: 100%;
     height: 100%;
@@ -160,7 +170,6 @@ ul.card_wrap {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    margin-right: 2rem;
     max-width: 417px;
     max-height: 443px;
 }
