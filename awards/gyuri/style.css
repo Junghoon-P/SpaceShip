@@ -122,9 +122,87 @@ nav {
 
 main {
     display: grid;
-    height: 300px;
     grid-row: 2/3;
 }
+
+/* main section */
+.main_section {
+    position: relative;
+    background-image: url(./image/img1.jpg);
+    width: 100%;
+    height: 100%;
+    min-height: 70vh;
+    max-height: 1080px;
+}
+
+.date {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.main_background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    color: #f4f7f6;
+}
+
+.main_background > article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.main_background > article > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.main_background > article > p {
+    margin-bottom: 2rem;
+}
+
+.rate_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.circle_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.circle_wrap > .content {
+    font-size: 0.7rem;
+    font-weight: 200;
+}
+
+.rate_circles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 4px solid #49c5b6;
+    border-radius: 10rem;
+}
+
+.main_rate > strong {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+/* card area */
 
 .card_section {
     /* background: #525252; */
@@ -136,14 +214,14 @@ main {
     padding: 3.5rem 0;
 }
 
-.card_section > header > ul{
+.card_section > header > ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.card_section  strong {
+.card_section strong {
     margin-right: 0.8rem;
 }
 
@@ -240,23 +318,25 @@ ul.card_wrap {
     display: flex;
 }
 
-.hm, .dev, .sotd {
+.hm,
+.dev,
+.sotd {
     padding: 0.2rem 0.4rem;
     margin-right: 0.3rem;
     border-radius: 10px 10px 10px 10px;
     color: rgb(255, 255, 255);
 }
 .hm {
-    background: #9FD2D6;
+    background: #9fd2d6;
 }
 
 .dev {
-    background: #8155EF;
+    background: #8155ef;
 }
 
 .sotd {
     margin: 0;
-    background: #F64E4E;
+    background: #f64e4e;
 }
 
 /* footer */
