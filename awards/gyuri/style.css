@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+
+body {
+    display: grid;
+    grid-template-rows: 1 1 20%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+/* header */
+
+header {
+    display: grid;
+    grid-row: 1/2;
+    background: #f4f7f6;
+    width: 100%;
+    height: 9rem;
+}
+
+.top {
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 500;
+    /* color: #525252; */
+}
+
+.top > ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding: 2rem 0;
+}
+
+.lang {
+    margin-left: 1rem;
+    color: #757575;
+    text-decoration: underline;
+}
+.sns {
+    margin: 0 1rem;
+}
+
+.sns > i {
+    margin: 0 0.4rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgb(255, 175, 175); */
+}
+
+.menu,
+.search,
+.submit {
+    font-size: 0.7rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    padding: 0 1rem 0 0;
+    width: 10%;
+    max-width: 70px;
+    height: 100%;
+    align-items: center;
+    border-right: 1px solid rgb(214, 214, 214);
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    padding: 0 1rem;
+    width: 100%;
+    justify-content: space-between;
+    /* background: #666; */
+}
+
+.fa-search {
+    font-size: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-left: 15rem;
+}
+
+.register_wrap {
+    display: flex;
+    align-items: center;
+    /* background: #555; */
+}
+
+.register_wrap > p {
+    color: #525252;
+    margin-right: 0.5rem;
+}
+
+.register {
+    color: #000000;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 130px;
+    height: 100%;
+    padding: 0 2rem;
+    background: #49c5b6;
+}
+
+/* main */
+
+main {
+    background: rgb(107, 102, 102);
+    display: grid;
+    height: 300px;
+    grid-row: 2/3;
+}
+
+/* footer */
+
+footer {
+    background: #777;
+    display: grid;
+    height: 50px;
+    grid-row: 3/4;
+}
