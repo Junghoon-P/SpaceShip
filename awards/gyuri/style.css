@@ -135,20 +135,22 @@ main {
     max-height: 1080px;
 }
 
-.date {
-    position: absolute;
-    top: 60px;
-    left: 60px;
-}
-
 .main_background {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     color: #f4f7f6;
+}
+
+.main_top {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    padding: 4rem 3rem 0 3rem;
 }
 
 .main_background > article {
@@ -200,6 +202,58 @@ main {
 .main_rate > strong {
     font-size: 2rem;
     font-weight: normal;
+}
+
+.main_bottom {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    font-size: 0.8rem;
+}
+
+.bottom_btn {
+
+}
+
+.visit_site {
+    border: 1px solid #41AB9E;
+    padding: 0.5rem 1rem;
+    border-radius: 20px 20px 20px 20px;
+    background: #41AB9E;
+    margin-right: 1rem;
+}
+
+.collect {
+    border: 1px solid #fff;
+    padding: 0.5rem 1.3rem;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 1rem;
+}
+
+.vote_profile {
+display: flex;
+}
+
+.jury {
+    border: 1px solid #fff;
+    padding: 0.6rem 1.3rem;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 1rem;
+} 
+
+
+.vote_profile > ul {
+    display: flex;
+}
+
+.vote_profile > ul img {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 100%;
+    background: #8155ef;
+    margin-left: 0.5rem;
 }
 
 /* card area */
