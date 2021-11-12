@@ -162,7 +162,7 @@ main {
     height: 100%;
 }
 
-.main_background > article > h1 {
+.main_background > article > h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
