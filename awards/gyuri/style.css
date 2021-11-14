@@ -525,3 +525,46 @@ footer {
     clip: rect(0, 0, 0, 0);
     clip-path: inset(50%); /* H5BP에선 안씀 */
 }
+
+/* media query */
+/* 600, 900, 1240, 1440 */
+
+@media screen and (max-width: 600px) {
+    body {
+        /* background-color: #000000; */
+    }
+    .register_wrap p {
+        display: none;
+    }
+
+    .main_section {
+        display: none;
+    }
+
+    .card_section header ul li:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+    body {
+        /* background: pink; */
+    }
+
+    .register_wrap p {
+        display: none;
+    }
+
+    .card_wrap__li {
+        max-width: 350px;
+    }
+}
+
+@media screen and (min-width: 901px){
+    body {
+        /* background: rgb(243, 91, 116); */
+    }
+}
+
+
+
