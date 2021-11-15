@@ -7,6 +7,7 @@
 ## 클론코딩 참고 사이트
 
 - https://www.awwwards.com/
+- https://www.kakaocorp.com/page/
 
 ## License / 라이센스
 
