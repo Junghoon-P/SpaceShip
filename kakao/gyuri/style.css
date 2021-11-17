@@ -9,6 +9,20 @@ body {
     grid-template-rows: 72px 1fr 5%;
 }
 
+.sr-only {
+    position: absolute; /* position: absolute/fixed 에서만 clip 속성 작동 */
+    margin: -1px; /* 부트스트랩에선 안씀 */
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    overflow: hidden; /* overflow: visible 이면 clip 속성 작동 안됨 */
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%); /* H5BP에선 안씀 */
+}
+
+
 /* header */
 
 header {
@@ -180,17 +194,6 @@ main > h1 {
     color: #999;
 }
 
-
-
-/* footer */
-
-footer {
-    background: #999;
-    grid-row: 3/4;
-    grid-column: 2/3;
-}
-
-
 .section-first, .section-sec, .section-thi, .section-last {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -210,3 +213,77 @@ footer {
     grid-row: 5/6
 }
 
+/* footer */
+
+footer {
+    grid-row: 3/5;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    padding-top: 37px;
+    padding-bottom: 48px;
+}
+
+footer a {
+    color: #888888;
+}
+
+footer strong {
+    color: #000;
+}
+
+.footer-top {
+    display: flex;
+}
+
+.top-desc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.top-desc li ul li {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.footer-top-last-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top-last-col a {
+    margin-top: 36px;
+}
+
+.footer-top-last-col strong {
+    margin: 0;
+    font-size: 12px;
+}
+
+.footer-bottom {
+    margin-top: 120px;
+}
+
+.bottom-desc {
+    display: flex;
+    font-size: 12px;
+}
+
+.bottom-desc > li {
+    margin-left: 24px;
+}
+
+.bottom-desc > li:first-child {
+    margin: 0;
+}
+
+small {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+.color-bold {
+    color: #333;
+}
