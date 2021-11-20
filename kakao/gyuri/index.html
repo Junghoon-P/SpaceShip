@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <ul>
             <li class="logo">kakao</li>
             <li>
@@ -217,13 +217,14 @@
                     <a class="btn-black" href="#">서비스 바로가기<i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            <a class="button-news" href="#">카카오 소식 모아보기</a>
+            <div class="wrap-button-news">
+            <a class="button-news" href="javascript:void(0)">카카오 소식 모아보기</a>
+        </div>
         </section>
     </main>
     
 
     <!-- footer -->
-
     <footer>
         <section class="footer-top">
             <h2 class="sr-only">footer navigation bar</h2>
@@ -252,7 +253,7 @@
                     <ul>
                         <li><a href="#"><strong>약속과 책임</strong></a></li>
                         <li><a href="#">ESG</a></li>
-                        <li><a href="#">소셜임팩튿</a></li>
+                        <li><a href="#">소셜임팩트</a></li>
                         <li><a href="#">디지털 관리</a></li>
                         <li><a href="#">AI 윤리</a></li>
                     </ul>
@@ -291,8 +292,10 @@
                 <li><a href="#">공지사항<i class="fas fa-chevron-down"></i></a></li>
                 <li><a href="#">사이버윤리실</a></li>
                 <li><a href="#">Contact Us</a></li>
+                <a class="btn-relate" href="javascript:void(0)">관련사이트<i class="fas fa-times"></i></a>
             </ul>
             <small>@ Kakao Corp.All rights reserved.</small>
+            <a href="#top" class="btn-to-top"><i class="fas fa-arrow-up"></i></a>
         </section>
     </footer>
 </body>
