@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kokoa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="sr-only">코코아 홈페이지</h1>
+    <nav class="nav">
+        <h2 class="sr-only">메뉴</h2>
+        <a href="" aria-label="홈페이지로 돌아가기" class="nav__logo">
+            <img src="./assets/kakao_logo.svg" alt="">
+        </a>
+        <ul class="nav__mid-box">
+            <li class="nav__item">
+                <a href="">코코아</a>
+            </li>
+            <li class="nav__item">
+                <a href="">뉴스</a>
+            </li>
+            <li class="nav__item">
+                <a href="">기술과 서비스</a>
+            </li>
+            <li class="nav__item">
+                <a href="">약속과 책임</a>
+            </li>
+        </ul>
+        <p class="nav__right-box">
+            <button type="button" aria-label="검색버튼" class="nav__btn">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <button type="button" aria-label="영어번역서비스 translate to english" class="nav__btn">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+            </button>
+            <button type="button" aria-label="다크모드" class="nav__btn nav__btn--darkmode">
+                <i class="fa fa-moon-o" aria-hidden="true" ></i>
+            </button>
+        </p>
+    </nav>
+    <main class="main__wrap">
+        <header class="today">
+            <h3 class="today__tit">    	
+                <p class="today__place">오늘의 코코아</p>
+                <p>11월 18일 목요일 소식입니다.</p>
+            </h3>
+        </header>
+        <div class="wrap-1">
+            <div class="sticky-item">
+                <article class="card card-lg">
+                    <span class="card__wrap">
+                        <div class="card-cate card-cate--news">
+                            <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                            <span class="card-cate__txt">보도자료</span>
+                        </div>
+                        <a href="#" class="card-link">
+                            <h4 class="card-link__tit">
+                                카카오 ‘음mm’, 크리에이터 후원 기능 ‘응원하기’도입
+                            </h4>
+                            <span class="card-link__wrap">
+                                <img src="./assets/card_umm.png" alt="if kokoa 2021 소개 이미지" class="card-link__img">
+                            </span>
+                        </a>
+                        <div class="card-desc">
+                            <span class="card-desc__tag">&#35;소셜오디오플랫폼</span>
+                            <span class="card-desc__tag">&#35;음mm</span>
+                            <span class="card-desc__tag">&#35;응원하기</span>
+                            <span class="card-desc__tag">&#35;카카오</span>
+                        </div>
+                    </span>
+                    <div class="share-modal">
+                        <input type="checkbox" class="share-inp" id="share">
+                        <label for="share" class=""></label>
+                        <ul class="share-list">
+                            <li class="share-list__item">
+                                <a href="#">
+                                    <i class="fa fa-comment" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="share-list__item">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="share-list__item">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="share-list__item">
+                                <a href="#">
+                                    <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <div class="wrap-2">
+                <div class="wrap-3">
+                    <article class="card card-md">
+                        <span class="card__wrap">
+                            <div class="card-cate card-cate--news">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">보도자료</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                <h4 class="card-link__tit">
+                                    제주다운 변화를 만드는 제주임팩트챌린지
+                                </h4>
+                                <span class="card-link__wrap">
+                                    <img src="./assets/card_giraffe.png" alt="if kokoa 2021 소개 이미지" class="card-link__img">
+                                </span>
+                            </a>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                        </span>
+                        <div class="share-modal">
+                            <input type="checkbox" class="share-inp" id="share">
+                            <label for="share" class=""></label>
+                            <ul class="share-list">
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card card-md">
+                        <span class="card__wrap">
+                            <div class="card-cate card-cate--social">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">사회</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                <h4 class="card-link__tit">
+                                    제주다운 변화를 만드는 제주임팩트챌린지
+                                </h4>
+                                <span class="card-link__wrap">
+                                    <img src="./assets/card_giraffe.png" alt="if kokoa 2021 소개 이미지" class="card-link__img">
+                                </span>
+                            </a>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                        </span>
+                        <div class="share-modal">
+                            <input type="checkbox" class="share-inp" id="share">
+                            <label for="share" class=""></label>
+                            <ul class="share-list">
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card card-md">
+                        <span class="card__wrap">
+                            <div class="card-cate card-cate--social">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">사회</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                <h4 class="card-link__tit">
+                                    제주다운 변화를 만드는 제주임팩트챌린지
+                                </h4>
+                                <span class="card-link__wrap">
+                                    <img src="./assets/card_giraffe.png" alt="if kokoa 2021 소개 이미지" class="card-link__img">
+                                </span>
+                            </a>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                        </span>
+                        <div class="share-modal">
+                            <input type="checkbox" class="share-inp" id="share">
+                            <label for="share" class=""></label>
+                            <ul class="share-list">
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <div class="wrap-3">
+                    <article class="card card-sm">
+                        <span class="card__wrap">
+                            <a href="#" class="card-link"></a>
+                            <div class="card-cate card-cate--stock">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">주가정보</span>
+                            </div>
+                            <h4 class="card-link__tit">
+                                제주다운 변화를 만드는 제주임팩트챌린지
+                            </h4>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                            </a>
+                        </span>
+                    </article>
+                    <article class="card card-md">
+                        <span class="card__wrap">
+                            <div class="card-cate card-cate--social">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">사회</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                <h4 class="card-link__tit">
+                                    제주다운 변화를 만드는 제주임팩트챌린지
+                                </h4>
+                                <span class="card-link__wrap">
+                                    <img src="./assets/card_giraffe.png" alt="if kokoa 2021 소개 이미지" class="card-link__img">
+                                </span>
+                            </a>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                        </span>
+                        <div class="share-modal">
+                            <input type="checkbox" class="share-inp" id="share">
+                            <label for="share" class=""></label>
+                            <ul class="share-list">
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card card-md">
+                        <span class="card__wrap">
+                            <div class="card-cate card-cate--social">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">사회</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                <h4 class="card-link__tit">
+                                    제주다운 변화를 만드는 제주임팩트챌린지
+                                </h4>
+                                <span class="card-link__wrap">
+                                    <img src="./assets/card_giraffe.png" alt="if kokoa 2021 소개 이미지" class="card-link__img">
+                                </span>
+                            </a>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                        </span>
+                        <div class="share-modal">
+                            <input type="checkbox" class="share-inp" id="share">
+                            <label for="share" class=""></label>
+                            <ul class="share-list">
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card card-sm">
+                        <span class="card__wrap">
+                            <a href="#" class="card-link"></a>
+                            <div class="card-cate card-cate--social">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">사회</span>
+                            </div>
+                            <h4 class="card-link__tit">
+                                제주다운 변화를 만드는 제주임팩트챌린지
+                            </h4>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                            </a>
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- ***1*** -->
+        <article class="arti-cult">
+            <h3 class="arti-cult__tit">
+                사람과 기술로 일상을 돕는 카카오 서비스
+            </h3>
+            <a href="#" class="arti-cult__link">
+                카카오문화 바로가기
+            </a>
+            <img src="./assets/arti_culture.png" alt="" class="arti-cult__img">
+        </article>
+        <!-- ***2*** -->
+        <div class="wrap-1">
+            <div class="wrap-2">
+                <div class="wrap-3">
+                    <article class="card card-md">
+                        <span class="card__wrap">
+                            <div class="card-cate card-cate--social">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">사회</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                <h4 class="card-link__tit">
+                                    제주다운 변화를 만드는 제주임팩트챌린지
+                                </h4>
+                                <span class="card-link__wrap">
+                                    <img src="./assets/card_giraffe.png" alt="if kokoa 2021 소개 이미지" class="card-link__img">
+                                </span>
+                            </a>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                        </span>
+                        <div class="share-modal">
+                            <input type="checkbox" class="share-inp" id="share">
+                            <label for="share" class=""></label>
+                            <ul class="share-list">
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card card-md">
+                        <span class="card__wrap">
+                            <div class="card-cate card-cate--social">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">사회</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                <h4 class="card-link__tit">
+                                    제주다운 변화를 만드는 제주임팩트챌린지
+                                </h4>
+                                <span class="card-link__wrap">
+                                    <img src="./assets/card_giraffe.png" alt="if kokoa 2021 소개 이미지" class="card-link__img">
+                                </span>
+                            </a>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                        </span>
+                        <div class="share-modal">
+                            <input type="checkbox" class="share-inp" id="share">
+                            <label for="share" class=""></label>
+                            <ul class="share-list">
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card card-md">
+                        <span class="card__wrap">
+                            <div class="card-cate card-cate--privacy">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">프라이버시</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                <h4 class="card-link__tit">
+                                    제주다운 변화를 만드는 제주임팩트챌린지
+                                </h4>
+                                <span class="card-link__wrap">
+                                    <img src="./assets/card_giraffe.png" alt="if kokoa 2021 소개 이미지" class="card-link__img">
+                                </span>
+                            </a>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                        </span>
+                        <div class="share-modal">
+                            <input type="checkbox" class="share-inp" id="share">
+                            <label for="share" class=""></label>
+                            <ul class="share-list">
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <div class="wrap-3">
+                    <article class="card card-sm">
+                        <span class="card__wrap">
+                            <a href="#" class="card-link"></a>
+                            <div class="card-cate card-cate--customer">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">고객센터</span>
+                            </div>
+                            <h4 class="card-link__tit">
+                                제주다운 변화를 만드는 제주임팩트챌린지
+                            </h4>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                            </a>
+                        </span>
+                    </article>
+                    <article class="card card-md">
+                        <span class="card__wrap">
+                            <div class="card-cate card-cate--social">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">사회</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                <h4 class="card-link__tit">
+                                    제주다운 변화를 만드는 제주임팩트챌린지
+                                </h4>
+                                <span class="card-link__wrap">
+                                    <img src="./assets/card_giraffe.png" alt="if kokoa 2021 소개 이미지" class="card-link__img">
+                                </span>
+                            </a>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                        </span>
+                        <div class="share-modal">
+                            <input type="checkbox" class="share-inp" id="share">
+                            <label for="share" class=""></label>
+                            <ul class="share-list">
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card card-sm">
+                        <span class="card__wrap">
+                            <a href="#" class="card-link"></a>
+                            <div class="card-cate card-cate--social">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">사회</span>
+                            </div>
+                            <h4 class="card-link__tit">
+                                제주다운 변화를 만드는 제주임팩트챌린지
+                            </h4>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                            </a>
+                        </span>
+                    </article>
+                    <article class="card card-md">
+                        <span class="card__wrap">
+                            <div class="card-cate card-cate--social">
+                                <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                                <span class="card-cate__txt">사회</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                <h4 class="card-link__tit">
+                                    제주다운 변화를 만드는 제주임팩트챌린지
+                                </h4>
+                                <span class="card-link__wrap">
+                                    <img src="./assets/card_giraffe.png" alt="if kokoa 2021 소개 이미지" class="card-link__img">
+                                </span>
+                            </a>
+                            <div class="card-desc">
+                                <span class="card-desc__tag">&#35;&#35;ESG</span>
+                                <span class="card-desc__tag">&#35;제주위드카카오 </span>
+                                <span class="card-desc__tag">#제주임팩트챌린지</span>
+                            </div>
+                        </span>
+                        <div class="share-modal">
+                            <input type="checkbox" class="share-inp" id="share">
+                            <label for="share" class=""></label>
+                            <ul class="share-list">
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="share-list__item">
+                                    <a href="#">
+                                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="sticky-item">
+                <article class="card card-lg">
+                    <span class="card__wrap">
+                        <div class="card-cate card-cate--news">
+                            <!-- <img src="" alt="" class="cate-cate__ico"> -->
+                            <span class="card-cate__txt">보도자료</span>
+                        </div>
+                        <a href="#" class="card-link">
+                            <h4 class="card-link__tit">
+                                카카오 ‘음mm’, 크리에이터 후원 기능 ‘응원하기’도입
+                            </h4>
+                            <span class="card-link__wrap">
+                                <img src="./assets/card_umm.png" alt="if kokoa 2021 소개 이미지" class="card-link__img">
+                            </span>
+                        </a>
+                        <div class="card-desc">
+                            <span class="card-desc__tag">&#35;소셜오디오플랫폼</span>
+                            <span class="card-desc__tag">&#35;음mm</span>
+                            <span class="card-desc__tag">&#35;응원하기</span>
+                            <span class="card-desc__tag">&#35;카카오</span>
+                        </div>
+                    </span>
+                    <div class="share-modal">
+                        <input type="checkbox" class="share-inp" id="share">
+                        <label for="share" class=""></label>
+                        <ul class="share-list">
+                            <li class="share-list__item">
+                                <a href="#">
+                                    <i class="fa fa-comment" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="share-list__item">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="share-list__item">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="share-list__item">
+                                <a href="#">
+                                    <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <section class="arti-etc">
+            <article class="arti arti--serv">
+                <a class="arti-wrap">
+                    <h4 class="arti__tit">
+                        사람과 기술로 일상을 돕는 카카오 서비스
+                    </h4>
+                    <strong href="#" class="arti__info">
+                        서비스 바로가기
+                    </strong>
+                </a>
+            </article>
+            <article class="arti arti--hr">
+                <a class="arti-wrap">
+                    <h4 class="arti__tit">
+                        세상만사에 관심이 많다면, 당신은 이미 카카오 크루
+                    </h4>
+                    <strong href="#" class="arti__info">
+                        카카오문화 바로가기
+                    </strong>
+                </a>
+            </article>
+        </section>
+        <a href="#" class="btn-etc btn__news">
+            카카오 소식 모아보기
+        </a>
+        <button type="button" class="btn__top">
+        </button>
+    </main>
+    <footer class="footer__wrap">
+        <section class="footer__serv">
+            <h3 class="sr-only">
+                그외 카카오 서비스 메뉴
+            </h3>
+            <ul class="serv-list">
+                <li class="serv-list__tit" >
+                    <a href="javascript:void(0)">코코아</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">코코아 문화</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">공동체</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">히스토리</a>
+                </li>
+            </ul>
+            <ul class="serv-list">
+                <li class="serv-list__tit" >
+                    <a href="javascript:void(0)">코코아</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">코코아 문화</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">공동체</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">히스토리</a>
+                </li>
+            </ul>
+            <ul class="serv-list">
+                <li class="serv-list__tit" >
+                    <a href="javascript:void(0)">코코아</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">코코아 문화</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">공동체</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">히스토리</a>
+                </li>
+            </ul>
+            <ul class="serv-list">
+                <li class="serv-list__tit" >
+                    <a href="javascript:void(0)">코코아</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">코코아 문화</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">공동체</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">히스토리</a>
+                </li>
+            </ul>
+            <ul class="serv-list">
+                <li class="serv-list__tit" >
+                    <a href="javascript:void(0)">코코아</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">코코아 문화</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">공동체</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">히스토리</a>
+                </li>
+            </ul>
+            <ul class="serv-list">
+                <li class="serv-list__tit" >
+                    <a href="javascript:void(0)">고객센터</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">카카오 고객센터 &#8599;</a>
+                </li>
+                <li class="serv-list__item">
+                    <a href="javascript:void(0)">Daum 고객센터 &#8599;</a>
+                </li>
+                <li class="serv-list__tit serv-list__tit--link" >
+                    <a href="javascript:void(0)">인재영입 &#8599;</a>
+                </li>
+                <li class="serv-list__tit serv-list__tit--link" >
+                    <a href="javascript:void(0)">카카오계정 &#8599;</a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer__poli">
+            <h3 class="sr-only">
+                이용약관 및 관련 정책
+            </h3>
+            <ul class="poli-list">
+                <li class="poli-list__item">
+                    <button>이용약관</button>
+                </li>
+                <li class="poli-list__item">
+                    <button>위치기반서비스이용약관</button>
+                </li>
+                <li class="poli-list__item">
+                    <button>개인정보처리방침</button>
+                </li>
+                <li class="poli-list__item">
+                    <button>운영정책</button>
+                </li>
+                <li class="poli-list__item">
+                    <button>청소년보호정책</button>
+                </li>
+                <li class="poli-list__item">
+                    <button>권리침해신고안내</button>
+                </li>
+                <li class="poli-list__item">
+                    <button>공지사항</button>
+                </li>
+                <li class="poli-list__item">
+                    <button>사이버윤리실</button>
+                </li>
+                <li class="poli-list__item">
+                    <button>Contact Us</button>
+                </li>
+            </ul>
+            <button type="button" class=" btn__site">
+                관련사이트
+            </button>
+            <small class="copyright">
+                &#64; Clone coding
+            </small>
+        </section>
+    </footer>
+</body>
+</html>
