@@ -21,12 +21,20 @@ body {
 /* header */
 
 header {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
     grid-row: 1/2;
-    grid-column: 2/3;
+    grid-column: 1/4;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+    width: 100%;
 }
 
 header > ul {
     display: flex;
+    grid-column: 2/3;
     height: 100%;
     align-items: center;
     justify-content: space-between;
