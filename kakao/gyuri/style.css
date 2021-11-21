@@ -141,6 +141,7 @@ main > h1 {
     background: #d4d4d4;
     padding: 3px 5px;
     border-radius: 7px;
+    margin-left: 5px;
 }
 
 .top small {
@@ -380,6 +381,8 @@ footer strong {
 }
 
 .btn-relate {
+    display: flex;
+    justify-content: space-between;
     float: right;
     color: #000;
     background: #eee;
@@ -528,9 +531,6 @@ small {
 
     .btn-relate {
         width: calc(100% - 40px);
-    }
-
-    .btn-relate i {
-        float: right;
+        margin: 40px 0;
     }
 }
