@@ -11,6 +11,8 @@
 body {
     font-family: klight;
     background: #fff;
+    word-break: keep-all;
+    word-wrap: break-word;
 }
 
 a {
@@ -123,8 +125,7 @@ img {
 }
 
 .art-box article {
-    background-color: #fff;
-    box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 9%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     box-sizing: border-box;
     border-radius: 14px;
     overflow: hidden;
@@ -135,9 +136,43 @@ img {
 
 .art-box article:hover {
     transform: translateY(-10px);
-    box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 20%);
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
 }
 
+.inner-top {
+    padding: 25px 24px 0;
+    
+}
+.inner-top .bullhorn > i {
+    color: rgb(221, 208, 30);
+}
+.inner-top i span {
+    color: black;
+}
+.inner-top .btn-info {
+    float:right;
+    color: #c2c2c2;
+    font-size: 20px;
+}
+.inner-top .big {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 700;
+    margin: 20px 10px;
+}
+
+.inner-top .mid {
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 600;
+    margin: 14px 4px;
+}
+
+.inner-top small {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
 .grid1 {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -184,6 +219,24 @@ img {
 .grid8 {
     grid-row: 6/8;
     grid-column: 1/5;
+    text-align: center;
+    padding: 30px;
+    overflow:auto;
+}
+.grid8 button {
+    margin-bottom: 20px;
+    padding: 13px 20px;
+    border-radius: 42px;
+    color: #fff;
+    background-color: #000;
+    font-size: 14px;
+}
+.grid8 img{
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    object-fit: scale-down;
+    object-position: top;
 }
 .grid9 {
     grid-row: 8/9;
@@ -215,7 +268,6 @@ img {
     grid-row: 8/13;
     grid-column: 3/5;
 }
-
 .grid15 article {
     grid-row: 1/ 3;
     position: sticky;
@@ -225,12 +277,30 @@ img {
 .grid16 {
     grid-row: 13/15;
     grid-column: 1/3;
+    background-color: #fae100;
+    padding-right: 80px;
+}
+.grid16 button {
+    margin-bottom: 20px;
+    padding: 13px 20px;
+    border-radius: 42px;
+    color: #fff;
+    background-color: #000;
+    font-size: 14px;
 }
 .grid17 {
     grid-row: 13/15;
     grid-column: 3/5;
+    background-color: #3c64ff;
 }
-
+.grid17 button {
+    margin-bottom: 20px;
+    padding: 13px 20px;
+    border-radius: 42px;
+    color: #fff;
+    background-color: #000;
+    font-size: 14px;
+}
 .art-more {
     width: 260px;
     margin: 84px auto 0;
@@ -270,7 +340,9 @@ img {
     left: 20px;
     font-size: 20px;
 }
-
+.link-top:hover {
+    opacity: 0.8;
+}
 #footer {
     padding: 37px 0 48px;
     border-top: 1px solid #eee;
