@@ -366,7 +366,7 @@ button, a, input, input+label {
     margin-bottom: 84px;
 }
 
-.arti {
+.arti--serv, .arti--hr {
     padding: 36px;
     position: relative;
     border-radius: 14px;
@@ -569,3 +569,11 @@ button, a, input, input+label {
     font-size: 1.2rem;
     color: var(--colorB7);
 }
+
+.card:hover, .arti:hover {
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    transform: translateY(-5px); 
+}
+
+/* transition 줘야되나
+arti, card 수정함 */
