@@ -1,0 +1,240 @@
+/* util */
+.sr-only {
+  position: absolute; /* position: absolute/fixed 에서만 clip 속성 작동 */
+  margin: -1px; /* 부트스트랩에선 안씀 */
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden; /* overflow: visible 이면 clip 속성 작동 안됨 */
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%); /* H5BP에선 안씀 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D151C;
+  padding: 6px 16px;
+}
+
+.header-wrap .logo {
+  color: white;
+  font-weight: 800;
+}
+
+.nav-wrap {
+  display: flex;
+  position: relative;
+}
+
+.nav-wrap li a {
+  line-height: 25.6px;
+  color: #b2c0cc;
+  padding: 0 8px;
+}
+
+.nav-wrap li a:hover, .header-icon-wrap li a:hover {
+  color: #fff;
+}
+
+.nav-wrap li:nth-child(5)::after {
+  display: block;
+  position: absolute;
+  content: '|';
+  top: 6px;
+  left: 332.5px;
+  color: white;
+}
+
+.header-icon-wrap {
+  display: flex;
+}
+
+.header-icon-wrap li a {
+  margin-left: 12px;
+  color: #b2c0cc;
+}
+
+
+/* main */
+.carousel-wrap {
+  background: #182334;
+}
+
+.carousel {
+  max-width: 1168px;
+  color: white;
+}
+
+.carousel article {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 32px 166px;
+}
+
+.carousel h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.carousel p {
+  font-size: 26px;
+  line-height: 41px;
+}
+
+carousel-tit-wrap:hover {
+  text-decoration: underline;
+}
+
+.carousel dl {
+  display: flex;
+  color: #b2c0cc;
+  margin-bottom: 10px;
+}
+
+.carousel dl:nth-child(3) {
+  margin-top: 32px;
+}
+
+.section-wrap {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 186px 1fr;
+  padding: 0 166px 0;
+  margin-top: 50px;
+  column-gap: 40px;
+  background-color: rgb(240, 243, 221);
+}
+
+/* aside */
+
+.grid-wraps {
+  background: rgb(176, 228, 215);
+  max-width: 818px;
+  grid-row: 1/3;
+}
+
+aside {
+ width: 308px;
+ height: 186px;
+ border: 1px solid #cccccc;
+ border-radius: 5px;
+}
+
+aside header {
+padding: 16px;
+font-size: 16px;
+font-weight: 700;
+line-height: 25.6px;
+border-bottom: 1px solid #cccccc;
+}
+
+.aside-cnt-wrap {
+  padding: 16px;
+  height: 100%;
+}
+
+.aside-cnt-wrap p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.6px;
+}
+
+.aside-cnt-wrap p:nth-child(2) {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 14px;
+  color: #b2c0cc;
+}
+
+.aside-cnt-wrap a {
+  display: block;
+  text-align: center;
+  padding: 12px 0 4px;
+  width:100%;
+  height: 21px;
+  border-radius: 5px;
+  background-color: #0078ff;
+}
+
+.program {
+  position: relative;
+}
+
+.program h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+
+.program-card {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  /* height: 220px; */
+  margin-bottom: 20px;
+  border: 1px solid rgb(146, 142, 142);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cont-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 16px 16px 24px;
+  color: #5f7f90;
+}
+
+.cont-wrap h4 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 29px;
+  color: #263747;
+}
+
+.cont-wrap h4:hover {
+  color: #0078ff;
+  text-decoration: underline;
+}
+
+.cont-wrap ul li {
+  line-height: 22px;
+}
+
+.cont-wrap .cont-icon {
+  display: flex;
+  font-size: 30px;
+}
+
+.cont-wrap .cont-icon i {
+  padding: 8px;
+}
+
+.btn-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 13px;
+  border: 1px solid #0078ff;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0078ff;
+}
