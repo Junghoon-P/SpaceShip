@@ -10,28 +10,81 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- **card 1** -->
+    <header class="header-wrap">
+        <div class="header-top">
+            <h1 class="logo">
+                <a href="">programmers</a>
+            </h1>
+            <nav>
+                <ul class="header-menu">
+                    <li>
+                        <a href="">탑프로그래머스</a>
+                    </li>
+                    <li>
+                        <a href="">스킬업</a>
+                    </li>
+                    <li>
+                        <a href="">개발자 채용</a>
+                    </li>
+                    <li>
+                        <a href="">테크 피드</a>
+                    </li>
+                    <li>
+                        <a href="">코딩테스트 연습</a>
+                    </li>
+                    <li>
+                        <a href="">프로그래밍 강의</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="header-icon">
+                <li>
+                    <a>
+                        <i class="far fa-file-alt first"></i>
+                    </a>
+                </li>
+                <li>
+                    <button><i class="far fa-bell"></i></button>
+                </li>
+                <li>
+                    <button><i class="far fa-user-circle"></i></button>
+                </li>
+            </ul>
+        </div>
+        <div class="header-btm-wrap">
+            <a class="header-btm">
+                <div class="nav-desc">
+                    <h5>채용 중인 기업 & 개발자 매칭 프로젝트</h5>
+                    <strong>Dev-Matching<br>백엔드 개발자(하반기)_진짜마지막</strong>
+                    <p>접수 마감: 12.02.(목)<br>코딩테스트: 12.04.(토)</p>
+                </div>
+            </a>
+        </div>
+    </header>
     <main>
-
-        <div class="user-profile">
-            <header>
-                <h3>내 프로필</h3>
-                <form class="check-match">
-                    <label for="check-match">매칭 활성화</label>
-                    <input type="checkbox" id="chech-match">
-                </form>
-            </header>
-            <div class="user-info">
-                <strong>seo young park</strong>
-                <span>ongongong@gmail.com</span>
-                <div class="btn-wrap">
-                    <button>프로필 작성</button>
-                    <button>전체 공개 URL 설정</button>
+        <!-- **profile** -->
+        <div>
+            <div class="user-profile">
+                <header>
+                    <h3>내 프로필</h3>
+                    <form class="check-match">
+                        <label for="check-match">매칭 활성화</label>
+                        <input type="checkbox" id="chech-match">
+                    </form>
+                </header>
+                <div class="user-info">
+                    <strong>seo young park</strong>
+                    <span>ongongong@gmail.com</span>
+                    <div class="btn-wrap">
+                        <button>프로필 작성</button>
+                        <button>전체 공개 URL 설정</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <section>
+        <section class="main-section">
+            <!-- **card 1** -->
             <section>
                 <header class="card-header">
                     <h3>채용 프로그램
@@ -237,12 +290,12 @@
                 </header>
                 <div class="card-posi-wrap">
                     <div>
-                        <a class="card-posi">
+                        <a class="card-posi card-theme">
                             <div class="img-wrap">
                                 <img src="./image/card-c.png" alt="" class="card-themeimg">
                                 <span>15개 포지션</span>
                             </div>
-                            <div class="card-desc">
+                            <div class="card-desc card-p">
                                 <strong class="card-char">병역특례</strong>
                                 <span class="card-chardesc">
                                     병역과 취업을 동시에 해결할 수 있는 포지션입니다.
@@ -254,7 +307,7 @@
                         </a>
                     </div>
                     <div>
-                        <a class="card-posi">
+                        <div class="card-posi">
                             <div class="img-wrap">
                                 <img src="./image/card-c.png" alt="" class="card-themeimg">
                                 <span>15개 포지션</span>
@@ -268,7 +321,7 @@
                                     포지션 바로 가기 >
                                 </span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div>
                         <a class="card-posi">
@@ -391,6 +444,7 @@
                     </div>
                 </div>
             </section>
+            <!-- **card 5** -->
             <section>
                 <div class="card-skill">
                     <h3>스킬 체크</h3>
@@ -449,5 +503,114 @@
             </section>
         </section>
     </main>
+    <footer class="footer">
+        <section class="footer-top">
+            <div class="footer-menu-wrap">
+                <ul class="footer-menu">
+                    <li class="footer-menu-tit">
+                        서비스
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="">개발자용 프로그래머스</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="">기업용 프로그래머스</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="">프로그래머스 스쿨</a>
+                    </li>
+                </ul>
+                <ul class="footer-menu">
+                    <li class="footer-menu-tit">
+                        서비스
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="">개발자용 프로그래머스</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="">기업용 프로그래머스</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="">프로그래머스 스쿨</a>
+                    </li>
+                </ul>
+                <ul class="footer-menu">
+                    <li class="footer-menu-tit">
+                        고객센터
+                    </li>
+                    <li class="footer-menu-item">
+                        기업 서비스 : 02-539-1886
+                    </li>
+                    <li class="footer-menu-item">
+                        교육 내용 관련 문의 : 02-539-1885
+                    </li>
+                    <li class="footer-menu-item">
+                        제휴 및 서비스 운영, 기타 문의 : 02-539-1882
+                    </li>
+                    <li class="footer-menu-item time">
+                        문의하기 운영시간 : 오전 9시 ~ 오후 6시 (주말 및 공휴일 휴무)<br>
+                        점심시간 : 오후 12시 ~ 오후 1시
+                    </li>
+                </ul>
+            </div>
+            <div class="select-wrap">
+                <button class="btn-select">패밀리 사이트</button>
+                <ul class="list-member">
+                    <li><button type="button">그렙</button></li>
+                    <li><button type="button">모니토</button></li>
+                    <li><button type="button">해시코드</button></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-btm">
+            <h3>2021 프로그래머스</h3>
+            <p>(주)그렙 / 공동대표 이확영, 임성수 / 서울특별시 서초구 강남대로 327, 2층 프로그래머스(서초동, 대륭서초타워) / 사업자등록번호 220-88-75699 / 통신판매업신고 제 2014-서울강남-03241호 / 직업정보제공사업 신고번호 J1200020180027 / 유료직업소개사업 등록번호 (국내)제2021-3210195-14-5-00026호</p>
+            <div class="footer-btm-wrap">
+                <ul class="policy-wrap">
+                    <li class="policy-wrap-tit"><a>개인정보 처리방침</a></li>
+                    <li><a>이용약관</a></li>
+                    <li><a>프로그래머스 인재채용</a></li>
+                </ul>
+                <ul class="sns-wrap">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-bootstrap"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+    </footer>
+    <script>
+        const btn = document.querySelector('.btn-select');
+        const list = document.querySelector('.list-member');
+        btn.addEventListener('click', () => {
+            list.classList.toggle('on');
+            btn.classList.toggle('on');
+        });
+        list.addEventListener('click', (event) => {
+            if (event.target.nodeName === "BUTTON") {
+                btn.innerText = event.target.innerText;
+            }
+        });
+        // btn.addEventListener('click', (event) => {
+        //     if (event.target.nodeName === "BUTTON") {
+        //         btn.innerText = event.target.innerText;
+        //         btn.classList.remove('on');
+        //         list.classList.remove('on');
+        //     }
+        // });
+    </script>
 </body>
 </html>
