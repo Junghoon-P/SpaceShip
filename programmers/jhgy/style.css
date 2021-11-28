@@ -72,14 +72,15 @@ body {
 }
 
 .carousel {
-  max-width: 1168px;
+  max-width: 1200px;
+  margin: 0 auto;
   color: white;
 }
 
 .carousel article {
   display: flex;
   flex-direction: column;
-  padding: 24px 0 32px 166px;
+  padding: 24px 0 32px;
 }
 
 .carousel h3 {
@@ -119,6 +120,7 @@ carousel-tit-wrap:hover {
 
 .grid-wraps {
   max-width: 818px;
+  margin: 0 auto;
   grid-row: 1/3;
 }
 
