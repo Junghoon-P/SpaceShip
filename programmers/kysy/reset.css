@@ -57,3 +57,7 @@ button {
 	background: none;
 	border:none;
 }
+
+a, button {
+    cursor: pointer;
+}
