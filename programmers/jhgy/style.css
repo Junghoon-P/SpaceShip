@@ -165,6 +165,10 @@ aside header {
   background-color: #0078ff;
 }
 
+.aside-cnt-wrap a:hover {
+  background-color: #0866d1;
+}
+
 .program {
   position: relative;
 }
@@ -499,6 +503,12 @@ aside header {
   background-color: #fbfbfd;
   display: flex;
   padding: 16px;
+  border-radius: 5px;
+  color: #212529;
+}
+
+.skill-cont:hover {
+  background-color: #f4f4f8;
 }
 
 .skill-cont i {
@@ -571,4 +581,157 @@ aside header {
   font-size: 14px;
   line-height: 21px;
   color: #98a8b9;
+}
+
+/* footer */
+
+.footer-real {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #d7e2eb;
+  margin-top: 80px;
+}
+
+.footer-real-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 1195px;
+  padding: 48px 0px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top ul {
+  display: flex;
+}
+
+.footer-top ul li strong {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #44576c;
+}
+
+.footer-top > ul > li > ul {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.footer-top > ul > li > ul li {
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #98a8b9;
+}
+
+.cust-cont {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+.footer-bottom a {
+  font-size: 12px;
+  font-weight: 700px;
+  line-height: 18px;
+  color: #98a8b9;
+}
+
+.brand {
+  margin-bottom: 8px;
+}
+
+.footer-bottom dl {
+  margin-bottom: 24px;
+  color: #98a8b9;
+}
+
+.footer-bottom dl dd {
+  font-size: 12px;
+  line-height: 19px;
+  max-width: 780px;
+  color: #98a8b9;
+}
+
+.footer-last-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-last-bottom li ul {
+  display: flex;
+}
+
+.footer-last-bottom li ul li {
+  margin-right: 16px;
+}
+
+.personal-info a {
+  color: #44576c;
+}
+
+.footer-hover:hover,
+.footer-hover li:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  color: #4867aa;
+}
+
+.fa-youtube:hover {
+  color: #dc3545;
+}
+
+.fa-blogger:hover {
+  color: #343a40;
+}
+
+.btn-select {
+  padding: 4px 8px;
+  border: 1px solid #d7e2eb;
+  border-radius: 2.5px;
+  font-size: 12px;
+  color: #263747;
+}
+
+.btn-select:hover,
+.btn-select:focus {
+  background: #e9ecf2;
+}
+
+.family-list {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 14px;
+  border: 1px solid #d7e2eb;
+  border-radius: 2.5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.family-list button {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.family-list button:hover {
+  color: #007aff;
+}
+
+.hide {
+  visibility: hidden;
 }
