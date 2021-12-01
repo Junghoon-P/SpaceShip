@@ -60,8 +60,11 @@ body {
 
 .sec-slogan {
   background: url("../image/939.jpg");
-  width: 100%;
-  height: 70rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 67rem;
   display: block;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,17 +82,213 @@ body {
 }
 
 .sec-slogan h2 {
+  max-width: 81.4rem;
   font-size: 6.4rem;
   color: #ffffff;
   text-align: center;
 }
 
+.sec-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 12rem 0;
+}
+
 .sec-info img {
-  height: 5.4rem;
+  max-height: 5rem;
+  margin-bottom: 3rem;
 }
 
 .sec-info p {
-  color: #344754;
   font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #67788a;
+}
+
+.sec-annou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec-annou-cnt {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  max-width: 107.2rem;
+  margin: 15.4rem 0 10.6rem;
+  padding: 0 4.8rem;
+}
+
+.sec-annou-cnt aside img {
+  width: 53.6rem;
+  height: 53.6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sec-annou-cnt .sec-annou-right {
+  padding-left: 10.7rem;
+}
+
+.sec-annou-cnt .sec-annou-right h3 {
+  color: #344754;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+}
+
+.sec-annou-cnt .sec-annou-right p {
+  margin: 1.6rem 0 3.2rem;
+  color: #67788a;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.sec-annou-cnt .sec-annou-right small {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #344754;
+}
+
+.sec-annou-cnt .sec-annou-right ul {
+  overflow: scroll;
+  padding-right: 1.7rem;
+  height: 28.8rem;
+  cursor: pointer;
+}
+
+.sec-annou-cnt .sec-annou-right ul li {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #344754;
+  border-bottom: 1px solid #dee3e9;
+}
+
+.sec-annou-cnt .sec-annou-right ul li a span {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.sec-annou-cnt .sec-annou-right ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.7rem 0;
+  margin-bottom: 0.1rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #67788a;
+}
+
+.sec-annou-cnt .sec-annou-right ul li a:hover {
+  color: #9faab5;
+  color: aqua;
+}
+
+.play-list-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.play-list-wrap div {
+  margin: 0.8rem 1.2rem 0 0;
+}
+
+.sec-items .sec-quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 14.4rem;
+}
+
+.sec-items .sec-quote h2 {
+  margin-bottom: 1.6rem;
+  line-height: 5.7rem;
+  font-size: 4.8rem;
+  color: #344754;
+}
+
+.sec-items .sec-quote p {
+  max-width: 38rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #67788a;
+}
+
+.sec-items .card-wrap .card {
+  color: #344754;
+}
+
+.sec-items .card-wrap .card img {
+  max-width: 46rem;
+}
+
+.sec-items .card-wrap .card h3 {
+  max-width: 22.3rem;
+  font-size: 3.6rem;
+  line-height: 120%;
+  margin: 2.4rem 0;
+}
+
+.sec-items .card-wrap .card a {
+  font-size: 1.8rem;
+  line-height: 120%;
+  color: inherit;
 }
 /*# sourceMappingURL=style.css.map */

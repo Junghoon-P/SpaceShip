@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+header {
+  height: 90px;
+  padding: 0 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header img {
+  width: 90px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header ul li {
+  padding: 0 28px;
+  font-size: 18px;
+  color: #677b8c;
+  font-weight: 600;
+}
+
+header ul li a:hover {
+  color: #95a3af;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.main-image {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://scontent-ssn1-1.xx.fbcdn.net/v/t39.8562-6/252509574_769584853942762_4631444119178197375_n.png?_nc_cat=102&ccb=1-5&_nc_sid=6825c5&_nc_ohc=0uB5G_GNN3EAX9b_g-i&_nc_ht=scontent-ssn1-1.xx&oh=c67248e86006c46489f164d62f49ad77&oe=61AA1A94");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-image p {
+  display: inline;
+  z-index: 10;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
