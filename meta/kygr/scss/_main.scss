@@ -20,3 +20,119 @@ main {
         font-weight: $font-weight-mid;
     }
 }
+
+.flex-wrap {
+    max-width: 1390px;
+    margin: 120px auto 0;
+    padding: 0 20px;
+}
+
+.main-header {
+    text-align: center;
+    padding: 120px 70px;
+    @include flex-style(center, center, column);
+
+    .main-desc {
+        max-width: 580px;
+        margin-top: 24px;
+        font-size: $font-20;
+        color: $font-color-main-cont;
+        line-height: 24px;
+        font-weight: $font-weight-mid;
+    }
+}
+
+.article-first {
+    max-width: 1072px;
+    margin: 154px auto 106px;
+    padding: 0 48px;
+    @include flex-style(flex-start, space-between, row);
+    .article-first-left {
+        position: relative;
+        .watch {
+            position: absolute;
+            @include flex-style(center, space-between, row);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $white;
+            
+            i {
+               font-size: $font-36; 
+               margin-right: 12px;
+            }
+            span {                
+                color: $white;
+                font-weight: $font-weight-bold;
+            }
+        }
+        img {
+            width: 536px;
+            height: 536px;
+            object-fit: cover;
+        }
+    }
+    .article-first-right {
+        padding-left: 107px;
+        h2 {
+            line-height: 43.2px;
+            font-size: $font-36;
+            color: $font-color-main-header;
+        }
+        .article-desc {
+            margin: 16px 0 32px 0;
+            font-size: $font-16;
+            color: $font-color-main-cont;
+            line-height: 24px;
+        }
+        .play-list{
+            max-height: 310px;
+            h3 {
+                font-size: $font-12;
+                color: $font-color-main-header;
+                margin-bottom: 20px;
+            }
+            ul{
+                @include flex-style(flex-start, center, column);
+                overflow-y: scroll;
+                max-height: 220px;
+                padding-top: 40px;
+                li {
+                    box-sizing: border-box;
+                    width: 100%;
+                    min-height: 51px;
+                    padding: 7px 10px 0 0;
+                    border-bottom: 1px solid $border-color;
+                    @include flex-style(center, space-between, row);
+                    .play-list-left {
+                        @include flex-style(center, flex-start, row);
+                    }
+                    i {
+                        font-size: $font-36;
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.article-second {
+    max-width: 1072px;
+    margin: 144px auto 0;
+    padding: 144px 0 128px 0;
+    text-align: center;
+
+    h2 {
+        font-size: $font-48;
+        color: $font-color-main-header;
+    }
+    p {
+        max-width: 410px;
+    }
+    img {
+        width: 460px;
+        height: 368px;
+        object-fit: cover;
+    }
+}
