@@ -22,6 +22,7 @@ html {
 
 body {
   font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
 }
 
 .header {
@@ -168,6 +169,8 @@ body {
 }
 
 .sec-items {
+  @include flexbox($fd: column, $jc: center, $ai: center);
+
   .sec-quote {
     @include flexbox($fd: column, $jc: center, $ai: center);
     text-align: center;
@@ -184,16 +187,30 @@ body {
       max-width: 38rem;
       font-size: 1.6rem;
       line-height: 2.4rem;
+      margin-bottom: 12rem;
       color: $third-color;
     }
   }
 
   .card-wrap {
+    @include flexbox($fd: row, $jc: space-between, $ai: flex-start);
+    flex-wrap: wrap;
+    max-width: 111.9rem;
+    width: 100%;
+    padding: 0 2.4rem 12.8rem;
+    margin: 0 6.6rem;
+
     .card {
+      max-width: 46rem;
+      max-height: 53rem;
       color: $primary-color;
 
+      &:nth-child(2) {
+        margin-top: 24rem;
+      }
+
       img {
-        max-width: 46rem;
+        max-width: 100%;
       }
       h3 {
         max-width: 22.3rem;
@@ -202,10 +219,179 @@ body {
         margin: 2.4rem 0;
       }
       a {
+        display: flex;
+        align-items: center;
         font-size: 1.8rem;
         line-height: 120%;
         color: inherit;
+
+        svg {
+          margin-right: 1.2rem;
+        }
       }
+    }
+  }
+}
+
+.sec-vr {
+  // @include flexbox($fd: row, $jc: center, $ai: center);
+  display: grid;
+  grid-template-columns: auto 61.8rem;
+  border-top: 1px solid #e0e4e7;
+  border-bottom: 1px solid #e0e4e7;
+  padding: 6.4rem 2.4rem;
+  margin: 0 16.8rem;
+
+  article {
+    justify-self: center;
+    align-self: center;
+
+    h2 {
+      max-width: 40.2rem;
+      font-size: 4.8rem;
+      line-height: 5.8rem;
+      margin-bottom: 2.4rem;
+      color: $primary-color;
+    }
+    a {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      // padding: 0.8rem 0 0 4.4rem;
+      display: flex;
+      align-items: center;
+      color: #344854;
+
+      svg {
+        width: 3.6rem;
+        height: 3.6rem;
+        padding-right: 0.8rem;
+      }
+    }
+  }
+
+  aside {
+    // margin-left: 17.2rem;
+    height: 44.8rem;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.sec-futu {
+  @include flexbox($fd: column, $jc: center, $ai: center);
+  text-align: center;
+  padding-top: 12rem;
+
+  h2 {
+    width: 42rem;
+    margin-bottom: 1.6rem;
+    line-height: 5.7rem;
+    font-size: 4.8rem;
+    color: $primary-color;
+  }
+
+  p {
+    max-width: 38rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 7.2rem;
+    color: $third-color;
+  }
+
+  .watch-film {
+    width: 119.2rem;
+    height: 67.4rem;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .pointer-wrap {
+    @include flexbox($fd: row, $jc: flex-start, $ai: center);
+    width: 119.2rem;
+
+    img {
+      margin: 0 1.6rem 0.5rem 0;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      padding: 1.9rem 0 2.4rem;
+    }
+  }
+
+  .sec-commit {
+    @include flexbox($fd: row, $jc: center, $ai: center);
+
+    article {
+      position: relative;
+      margin: 0 48px 0 224px;
+      // margin-right: 4.8rem;
+
+      a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+      }
+      .img-wrap {
+        width: 57.2rem;
+        height: 42.9rem;
+        border: 1px solid rgb(242, 242, 242);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .commit-cnt {
+        @include flexbox($fd: column, $jc: center, $ai: flex-start);
+        text-align: left;
+        padding: 2.2rem 0;
+
+        h4 {
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          color: #444950;
+          margin-bottom: 1.8rem;
+        }
+
+        p {
+          max-width: 57.2rem;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          font-weight: 400;
+          margin-bottom: 2.2rem;
+        }
+        .btn-contact {
+          position: relative;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          padding-left: 2.4rem;
+          margin: 0;
+        }
+        svg {
+          position: absolute;
+          top: 0.2rem;
+          left: -0.4rem;
+          width: 2.2rem;
+          height: 2.2rem;
+        }
+      }
+    }
+
+    article:last-child {
+      margin-right: 0;
+      margin: 0 224px 0 0;
     }
   }
 }
