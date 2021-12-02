@@ -122,7 +122,6 @@ main {
     margin: 144px auto 0;
     padding: 144px 0 128px 0;
     text-align: center;
-
     h2 {
         font-size: $font-48;
         padding-bottom: 16px;
@@ -160,3 +159,108 @@ main {
         }
     }
 }
+
+.article-third {
+    @include flex-style(center, space-between, row);
+    padding: 64px 24px;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+    max-width: 1295px;
+    margin: 0 auto;
+    .article-third-left {
+        margin-left: 112px;
+        h2 {
+            font-size: $font-48;
+            color: $font-color-main-header;
+    
+        }
+        .add-explore {
+            margin-top: 20px;
+            i {
+                margin-right: 12px;
+                font-size: $font-24;
+                color: $font-color-main-cont;
+            }
+        }
+    }
+    img {
+        width: 618px;
+        height: 448px;
+        object-fit: cover;
+    }
+}
+
+.article-fourth {
+    max-width: 1192px;
+    margin: 0 auto;
+    padding-bottom: 155px;
+    text-align: center;
+    .article-fourth-desc {
+        @include flex-style(center, center, column);
+        padding: 120px 72px;
+        h2 {
+            max-width: 420px;
+            font-size: $font-48;
+            padding-bottom: 16px;
+            line-height: 120%;
+            color: $font-color-main-header;
+        }
+        p {
+            line-height: 150%;
+            color: $font-color-main-header;
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .img-top {
+        position: relative;
+        object-fit: cover;
+    }
+    .img-bottom {
+        @include flex-style(flex-start, space-between, row);
+
+        div {
+            width: 48%;
+            text-align: left;
+            h3 {
+                padding-top: 22px;
+                margin-bottom: 18px;
+                font-size: $font-18;
+                color: $font-color-main-header;
+            }
+            p {
+                margin-bottom: 22px;
+                color: $font-color-footer-cont;
+                line-height: 150%;
+            }
+
+        }
+    }
+    .watch {
+        position: absolute;
+        @include flex-style(center, space-between, row);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        i {
+            font-size: $font-36; 
+            margin-right: 12px;
+         }
+         span {                
+             color: $white;
+             font-weight: $font-weight-bold;
+         }
+    }
+    .commitments {
+        text-align: left;
+        padding: 19px 0 24px;
+        color: $font-color-main-cont;
+        span {
+            margin-left: 16px;
+        }
+    }
+}
+
