@@ -276,11 +276,13 @@ main {
 
 .article-second h2 {
   font-size: 48px;
+  padding-bottom: 16px;
   color: #344854;
 }
 
 .article-second p {
   max-width: 410px;
+  margin: 0 auto;
 }
 
 .article-second img {
