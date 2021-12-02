@@ -131,10 +131,32 @@ main {
     p {
         max-width: 410px;
         margin: 0 auto;
+        margin-bottom: 120px;
     }
-    img {
-        width: 460px;
-        height: 368px;
-        object-fit: cover;
+    .second-art-box {
+        display: flex;
+        justify-content: flex-end;
+    }
+    section {
+        @include flex-style(flex-start, center, column);
+        img {
+            width: 460px;
+            height: 368px;
+            object-fit: cover;
+        }
+        p {
+            font-size: $font-36;
+            margin: 16px 0 24px 0;
+            color: $font-color-main-header;
+            font-weight: $font-weight-bold;
+        }
+        .add-explore {
+            @include flex-style(center, center, row);
+            i {
+                margin-right: 12px;
+                font-size: $font-24;
+                color: $font-color-main-cont;
+            }
+        }
     }
 }
