@@ -1,0 +1,114 @@
+.footer-wrap {
+  background-color: #f7f7f7;
+  color: black;
+  max-width: 128rem;
+  padding: 4rem 22rem;
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    article {
+      padding: 0 2rem;
+      @include flexbox($fd: column, $jc: flex-start, $ai: flex-start);
+      img {
+        height: 2.6rem;
+        margin-bottom: 4.8rem;
+      }
+
+      ul {
+        padding: 0;
+      }
+      .footer-sns-tit {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        color: #505e6b;
+        margin-bottom: 0.7rem;
+      }
+
+      .footer-sns-wrap {
+        @include flexbox($fd: row, $jc: center, $ai: center);
+        li a {
+          color: #444950;
+          font-size: 2rem;
+          margin-right: 1.2rem;
+        }
+      }
+    }
+
+    .company-wrap {
+      .list-tit a {
+        display: inline-block;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: #232323;
+      }
+      li ul li a {
+        display: inline-block;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        padding: 0.4rem 0;
+        color: #505e6b;
+      }
+      li ul li:last-child {
+        margin-bottom: 3rem;
+      }
+    }
+
+    ul {
+      padding: 0 2rem;
+    }
+
+    .list-tit a {
+      display: inline-block;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: #232323;
+    }
+
+    ul li a {
+      display: inline-block;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      padding: 0.4rem 0;
+      color: #505e6b;
+    }
+  }
+
+  .footer-bottom {
+    @include flexbox($fd: row, $jc: space-between, $ai: center);
+    padding: 4rem 0 0 2rem;
+    border-top: 1px solid #d4dae1;
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: #505e6b;
+    }
+
+    .footer-bottom-right {
+      @include flexbox($fd: row, $jc: space-between, $ai: center);
+
+      .select-wrap {
+        button {
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          color: #505e6b;
+        }
+        .btn-select {
+          padding-right: 4rem;
+          i {
+            padding-left: 1rem;
+            line-height: 1.5rem;
+            vertical-align: bottom;
+            font-size: 2rem;
+            color: #4b4b4b;
+          }
+        }
+      }
+      a {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: #505e6b;
+      }
+    }
+  }
+}

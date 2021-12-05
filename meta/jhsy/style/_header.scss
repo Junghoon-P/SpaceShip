@@ -1,0 +1,25 @@
+.header {
+  height: 8.9rem;
+  color: black;
+  padding: 0 6.4rem;
+  @include flexbox($fd: row, $jc: space-between, $ai: center);
+
+  img {
+    width: 8.9rem;
+  }
+
+  ul {
+    color: black;
+    @include flexbox($fd: row, $jc: space-between, $ai: center);
+  }
+
+  ul li {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.7rem;
+    padding: 0 1.8rem 0.3rem;
+    a {
+      color: $secondary-color;
+    }
+  }
+}
