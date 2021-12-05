@@ -144,6 +144,7 @@ button, a, input, input+label {
     box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     position: relative;
+    transition: all 0.2s;
 }
 
 .card-md, .card-sm {
@@ -319,6 +320,10 @@ button, a, input, input+label {
 
 /* arti-cult */
 
+.arti {
+    transition: all 0.2s;
+}
+
 .arti-cult {
     border-radius: 14px;
     background-color: var(--colorB1);
@@ -432,7 +437,7 @@ button, a, input, input+label {
 
 /* flex layout */
 
-.wrap-1 {
+.wrap-first {
     display: flex;
     margin: 0px -18px;
     margin-bottom: 36px;
@@ -448,13 +453,13 @@ button, a, input, input+label {
     margin: 0 18px;
 }
 
-.wrap-2 {
+.wrap-second {
     display: flex;
     flex-wrap: wrap;
     height: 1332px;
 }
 
-.wrap-3 {
+.wrap-third {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -528,17 +533,20 @@ button, a, input, input+label {
 }
 
 .footer__poli {
-
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .poli-list {
     display: flex;
+    float: left;
 }
 
 .poli-list__item {
     margin-left: 24px;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #888;
 }
 
 .poli-list__item:first-child {
@@ -568,12 +576,10 @@ button, a, input, input+label {
     display: block;
     font-size: 1.2rem;
     color: var(--colorB7);
+    clear: both;
 }
 
 .card:hover, .arti:hover {
     box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
 }
-
-/* transition 줘야되나
-arti, card 수정함 */
